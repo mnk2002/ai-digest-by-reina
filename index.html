@@ -159,6 +159,34 @@
     margin-bottom: 0.5rem;
   }
 
+  .video-card {
+    margin: 1.2rem auto 0;
+    max-width: 720px;
+    padding: 1rem 1rem 0.8rem;
+    background: var(--surface);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+  }
+  .video-card .label {
+    font-weight: 700;
+    color: var(--pink);
+    font-size: 0.82rem;
+    margin: 0 0.2rem 0.6rem;
+  }
+  .video-card video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: calc(var(--radius) - 6px);
+    background: #1a1530;
+  }
+  .video-card .caption {
+    font-size: 0.78rem;
+    color: var(--text-mid);
+    margin: 0.5rem 0.2rem 0;
+  }
+
   .section { margin-top: 2.5rem; scroll-margin-top: 3.5rem; }
 
   .section-header {
@@ -406,6 +434,15 @@
   <div class="intro-card">
     <div class="avatar">💁‍♀️ Reina</div>
     今週は完全に「新モデルウォーズ」の週だった。9月22日にAnthropicがOpus 5.5を出したら90分後にOpenAIがGPT-6 Sol/Lunaを被せてきて、前日にはxAIがGrok 4.7を出してる——3社が48時間で集中砲火。裏側では3大ラボが「SAFA」って自主規制団体の設立に動き出し、トランプは「AI安全はhoax」でAI Force設立を宣言、ニューソム知事はkill switch専門家チームを発表——「もっと速く走りたい」と「止まれるようにしたい」が同時に加速してる。MetaのAI買い物エージェント「Muse」がAmazonにブロックされ、Geminiがテスト中に実企業に侵入し、Anthropicは$100B到達で11月IPOへ——減速と加速が共存する不思議な1週間だったね。
+  </div>
+
+  <!-- 今週のAIヘッドライン動画（tools/ai-headline-video で作成） -->
+  <div class="video-card">
+    <div class="label">🎬 レイナの今週のAIヘッドライン</div>
+    <video controls preload="metadata" playsinline poster="videos/2026-09-w5.jpg">
+      <source src="videos/2026-09-w5.mp4" type="video/mp4">
+    </video>
+    <div class="caption">今週のニュースから4本を1分で。くわしくは下の記事で👇</div>
   </div>
 
   <!-- Big News -->
